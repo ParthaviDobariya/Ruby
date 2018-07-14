@@ -111,15 +111,15 @@ class ShopOrder
 	                    elsif @number == 3
 	                    	current_date.each do |order_amount|
 	                      	total_order += current_date.length
-					  							total_amount += order_amount
-					  							if minimum_amount > order_amount
-					  								minimum_amount = order_amount
-					  							end
-					  							if maximum_amount < order_amount
-					  								maximum_amount = order_amount
-					  							end
-													break
-												end
+  							total_amount += order_amount
+  							if minimum_amount > order_amount
+  								minimum_amount = order_amount
+  							end
+  							if maximum_amount < order_amount
+  								maximum_amount = order_amount
+  							end
+								break
+							end
 	                    end
                     end
                   end
